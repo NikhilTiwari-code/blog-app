@@ -11,9 +11,6 @@ function HomePage() {
     
     useEffect(() => {
         const baseQuery = [Query.equal("status", "active")];
-        if (isLoggedIn && userData?.$id) {
-            baseQuery.push(Query.equal("userId", userData.$id));
-        }
         appwriteService.getPosts(baseQuery).then((posts)=>{
           if(posts){
             setPosts(posts.documents)
