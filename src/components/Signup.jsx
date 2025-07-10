@@ -77,7 +77,7 @@ function Signup(){
                 placeholder="Enter your password"
                 {...register('password',{required: true,})}
             />
-            <Button type="submit">Sign Up</Button>
+            <Button type="submit" bgColor="bg-transparent" textColor="text-blue-500">Sign Up</Button>
             </form>
         </div>
     )
