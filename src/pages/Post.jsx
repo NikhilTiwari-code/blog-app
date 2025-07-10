@@ -54,15 +54,15 @@ export default function Post (){
                     />
 
                     {isAuthor && (
-                        <div className="absolute right-6 top-6">
+                        <div className="absolute top-4 right-4 z-20 flex flex-col gap-2 bg-white/80 backdrop-blur-sm p-1 rounded-md">
                                                         {/* <Link to={`/edit-post/${post.$id}`}> */}
                             {/* WRONG: The path '/edit-post/' did not match the route '/editpost/' defined in main.jsx. */}
                             <Link to={`/editpost/${post.$id}`}> {/* FIX: Corrected the link to match the defined route. */}
-                                <Button bgColor="bg-green-500" className="mr-3">
+                                <Button bgColor="bg-blue-500" textColor="text-blue-500" className="mr-3">
                                     Edit
                                 </Button>
                             </Link>
-                            <Button bgColor="bg-red-500" onClick={deletePost}>
+                            <Button bgColor="bg-blue-500" textColor="text-blue-500" className="border border-blue-500" onClick={deletePost}>
                                 Delete
                             </Button>
                         </div>

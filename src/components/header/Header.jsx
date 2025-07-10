@@ -33,7 +33,7 @@ function Header (){
                 <nav className="flex">
                     <div className="mr-4">
                         <Link to='/'>
-                            <Logo width='70px' />
+                            <Logo width='120px' />
 
                             </Link>
                     </div>
@@ -43,7 +43,8 @@ function Header (){
                             <li key={item.name}>
                                 <button
                                 onClick={() => navigate(item.slug)}
-                                className={`relative inline-block px-4 py-2 font-medium transition-colors ${location.pathname===item.slug ? 'text-blue-600 after:absolute after:inset-x-0 after:-bottom-1 after:border-b-2 after:border-dashed after:border-blue-600' : 'text-gray-700 hover:text-blue-600'}`}
+                                className={`relative inline-block px-4 py-2 font-medium transition-colors ${location.pathname===item.slug ? 'text-blue-600 after:absolute after:inset-x-0 after:-bottom-1 after:border-b-2 after:border-dashed after:border-blue-600' : 'text-gray-700 hover:text-blue-600'}` }
+                                style={{minWidth:'80px'}}
                                 >
                                 {item.name}
                                 </button>

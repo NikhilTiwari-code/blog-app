@@ -5,7 +5,7 @@ function Button({
     type = "button",
     className = "",
     bgColor = "bg-blue-500",
-    textColor = "text-red",
+    textColor = "text-white",
     ...props
 }) {
     return (
